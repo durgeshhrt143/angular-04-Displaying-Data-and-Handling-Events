@@ -1,0 +1,8 @@
+<p>
+  title: {{ course.title | uppercase | lowercase }}<br />
+  students: {{ course.students | number }}<br />
+  rating:{{ course.rating | number: "3.1-3" }}<br />
+  price:{{ course.price | currency: "Rs" }}<br />
+  releaseDate:{{ course.releaseDate | date: "shortDate" }}<br />
+  text:{{ text | summary: 10 }}
+</p>
